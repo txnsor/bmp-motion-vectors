@@ -9,3 +9,5 @@ There are three main parts:
 3. export_file.c - take a heap array and export it to a new, empty bmp.
 
 Functionality is provided to create an optical flow based, motion vector encoding codec.
+
+To compile: gcc -o filename.exe main.c ./read_file/read_file.c ./export_file/export_file.c ./lk_vectors/lk_vectors.c

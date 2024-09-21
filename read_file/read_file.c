@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 #include <string.h>
 #include <stdbool.h> 
 #include "./read_file.h"
@@ -53,12 +54,24 @@ bool isBmp(char * filepath) {
     return !(bool)strcmp(buffer, BMP_REGULAR);
 }
 
-// int main(int argc, char *argv[]) {
-//     // parse first argument on cmd line
-//     if (argc <= 1) {return 0;}
-//     char * filepath = argv[1];
-
-//     printf("file is bmp: %s\n", isBmp(filepath)?"true":"false");
-
-//     return 0;
-// }
+/**
+ * @brief Returns the size of a bmp file.
+ * @param filepath A file path string.
+ */
+// TODO: finish
+int32_t bmpSize(char * filepath) {
+    // // double check the file is a .bmp
+    // if (!isBmp(filepath)) {return 0;}
+    // // open the file
+    // FILE *file;
+    // file = fopen(filepath, "r");
+    // // create the buffer
+    // int32_t buffer[1];
+    // // read into the buffer
+    // size_t elem_read = fread(buffer, sizeof(int32_t), 1, file);
+    // // close the file
+    // fclose(file);
+    // // return buffer[0]
+    // return buffer[0];
+    return 0;
+}
