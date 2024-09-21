@@ -9,7 +9,7 @@
 #include <string.h>
 #include <string.h>
 #include <stdbool.h> 
-#include "read_file.h"
+#include "./read_file.h"
 
 /**
  * @brief The size of the .bmp file header.
@@ -19,8 +19,6 @@
  * @brief The "regular" signature of a .bmp (excluding OS/2 specific subformats)
  */
 #define BMP_REGULAR "BM"
-
-
 
 /**
  * @brief Validates that a filepath exists and is a .bmp file
@@ -55,12 +53,12 @@ bool isBmp(char * filepath) {
     return !(bool)strcmp(buffer, BMP_REGULAR);
 }
 
-int main(int argc, char *argv[]) {
-    // parse first argument on cmd line
-    if (argc <= 1) {return 0;}
-    char * filepath = argv[1];
+// int main(int argc, char *argv[]) {
+//     // parse first argument on cmd line
+//     if (argc <= 1) {return 0;}
+//     char * filepath = argv[1];
 
-    printf("file is bmp: %s\n", isBmp(filepath)?"true":"false");
+//     printf("file is bmp: %s\n", isBmp(filepath)?"true":"false");
 
-    return 0;
-}
+//     return 0;
+// }
