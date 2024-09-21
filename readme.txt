@@ -1,4 +1,4 @@
-BMP Motion Vectors by Marceline (Marc) Browning
+BMP Motion Vectors by txnsor
 
 This is a simple project designed to read 2 png files, and export an image that displays the approximate motion vectors between the two images.
 
